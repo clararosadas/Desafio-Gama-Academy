@@ -1,0 +1,128 @@
+* {
+    padding:0px;
+    margin: 0px;
+    color: black;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #8ccdb0;
+} 
+
+fieldset {
+    border: 10;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    color: #8ccdb0;
+    justify-content: center;
+}
+
+input, select, button {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+header {
+    display: flex; 
+    justify-content: space-around;
+    width: 99%;
+    padding: 7px; 
+    margin-bottom: 10px;    
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+h1 {
+    color: #8ccdb0;
+    font-size: 170%;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    color: #8ccdb0;
+    font-size: 140%;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #8ccdb0;
+    font-size: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+}
+
+.linha {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    padding: 1px;
+    }
+
+.imagem {
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #8ccdb0;
+    background-color: #919191;;
+    border: none;
+    border-radius: 25px;
+}
+
+#button, select, input{
+    cursor: pointer;
+}
+  
+#button:hover {
+    background-color:#8ccdb0;
+    color: #919191;
+    transition: 300ms;
+}
+
+#obrigatorio {
+    color: red;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+#pobrigatorio {
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+}
