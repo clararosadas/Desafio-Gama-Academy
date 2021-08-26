@@ -1,47 +1,49 @@
 {
-    "openapi": "3.0.0",
-    "info": {
-      "title": "API do JobsNET",
-      "description": "API do desafio Gama Academy - Banco de Currículos JobsNET",
-      "version": "1.0.0"
-    },
-    "servers": [
-      {
-        "url": "http://localhost:3000",
-        "description": "Ambiente de desenvolvimento"
-      }
-    ],
-    "paths": {
-      "/register": {
-        "post": {
-          "summary": "Cadastro do currículo",
-          "description": "Rota de cadastro do currículo",
-          "tags": ["candidato"],
-          "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "nome": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    }
+  "openapi": "3.0.0",
+    
+  "info": {
+    "title": "API do JobsNET",
+    "description": "API do desafio Gama Academy - Banco de Currículos JobsNET",
+    "version": "1.0.0"
+  },
+    
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Ambiente de desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro do currículo",
+        "description": "Rota de cadastro do currículo",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
                   }
-                },
-                "examples": {
-                  "eu": {
-                    "value": {
-                      "nome": "Clara Rosadas",
-                      "email": "clararosadas@gmail.com"
-                    }
+                }
+              },
+              "examples": {
+                "eu": {
+                  "value": {
+                    "nome": "Clara Rosadas",
+                    "email": "clararosadas@gmail.com"
                   }
                 }
               }
-            }
+            }  
           }
         }
       }
     }
-  }
+  }  
+}  
