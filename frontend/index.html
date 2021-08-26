@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
 
     <head>
         <link rel="stylesheet" href="styles.css">
@@ -84,69 +84,40 @@
                 </div>
 
                 <div>
-                    <label for="logradouro">Endereço</label>
+                    <label for="endereco">Endereço</label>
                     <label id="obrigatorio">*</label><br>
-                    <input type="text" name="logradouro" id="logradouro" size="70" maxlength="70" required><br>
+                    <input type="text" name="endereco" id="endereco" required>
                 </div>
 
                 <div>
                     <label for="numero">Número</label>
                     <label id="obrigatorio">*</label><br>
-                    <input type="text" name="numero" id="numero" size="10" maxlength="10" required><br>
+                    <input type="text" name="numero" id="numero" required>
                 </div>
             </div>
 
             <div class="linha">
                 <div>
-                    <label for="complemento">Complemento</label>
-                    <input type="text" name="numero" id="numero" size="10" maxlength="10"><br>
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" name="complemento" id="complemento">
                 </div>
 
                 <div>
                     <label for="bairro">Bairro</label>
                     <label id="obrigatorio">*</label><br>
-                    <input type="text" name="bairro" id="bairro" size="50" maxlength="50" required><br>
+                    <input type="text" name="bairro" id="bairro" required>
                 </div>
 
                 <div>
                     <label for="cidade">Cidade</label>
                     <label id="obrigatorio">*</label><br>
-                    <input type="text" name="cidade" id="cidade" size="50" maxlength="50" required><br>
+                    <input type="text" name="cidade" id="cidade" required>
                 </div>
 
                 <div>
                     <label for="uf">UF</label>
                     <label id="obrigatorio">*</label><br>
-                    <select id="uf">
-                        <option selected disabled value="">Selecione</option>
-                        <option>Acre</option>
-                        <option>Alagoas</option>
-                        <option>Amapá</option>
-                        <option>Amazonas</option>
-                        <option>Bahia</option>
-                        <option>Ceará</option>
-                        <option>Distrito Federal</option>
-                        <option>Espírito Santo</option>
-                        <option>Goiás</option>
-                        <option>Maranhão</option>
-                        <option>Mato Grosso</option>
-                        <option>Mato Grosso do Sul</option>
-                        <option>Minas Gerais</option>
-                        <option>Pará</option>
-                        <option>Paraíba</option>
-                        <option>Paraná</option>
-                        <option>Pernambuco</option>
-                        <option>Piauí</option>
-                        <option>Rio de Janeiro</option>
-                        <option>Rio Grande do Norte</option>
-                        <option>Rio Grande do Sul</option>
-                        <option>Rondônia</option>
-                        <option>Roraima</option>
-                        <option>Santa Catarina</option>
-                        <option>São Paulo</option>
-                        <option>Sergipe</option>
-                        <option>Tocantins</option>
-                    </select>
+                    <input type="text" name="uf" id="uf" required>                     
                 </div>
             </div>
 
@@ -158,13 +129,13 @@
                 </div>
 
                 <div>
-                    <label for="alternativo">Telefone alternativo</label>
+                    <label for="alternativo">Telefone alternativo</label><br>
                     <input type="alternativo" name="alternativo" id="alternativo">
                 </div>
 
                 <div>
                     <label for="email">E-mail</label>
-                    <label for="obrigatorio">*</label><br>
+                    <label id="obrigatorio">*</label><br>
                     <input type="email" name="email" id="email" required>
                 </div>
             </div>
@@ -176,19 +147,18 @@
             </div>
             <div class="linha">
                 <div>
-                    <label for="id">RG</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="id" name="id" id="id" required>
+                    <label for="id">RG</label><br>
+                    <input type="id" name="id" id="id">
                 </div>
 
                 <div">
                     <label for="cpf">CPF</label>
-                    <label for="obrigatorio">*</label><br>
+                    <label id="obrigatorio">*</label><br>
                     <input type="cpf" name="cpf" id="cpf" required>
                 </div>
 
                 <div>
-                    <label for="veiculo">Possui veículo?</label>
+                    <label for="veiculo">Possui veículo?</label><br>
                     <select id="veiculo">
                       <option selected disabled value="">Selecione</option>
                       <option>Sim</option>
@@ -197,7 +167,7 @@
                 </div>
                 
                 <div>
-                    <label for="habilitacao">Habilitação</label>
+                    <label for="habilitacao">Habilitação</label><br>
                     <select id="habilitacao">
                       <option selected disabled value="">Selecione</option>
                       <option>CNH A</option>
@@ -219,5 +189,7 @@
         </form>
 
     </body>
+
+    <script src="script.js"></script>
 
 </html>
