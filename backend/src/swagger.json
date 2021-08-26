@@ -27,7 +27,58 @@
                   "nome": {
                     "type": "string"
                   },
+                  "datanascimento": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "estadocivil": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "complemento": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "alternativo": {
+                    "type": "string"
+                  },
                   "email": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
                     "type": "string"
                   }
                 }
@@ -36,7 +87,24 @@
                 "eu": {
                   "value": {
                     "nome": "Clara Rosadas",
-                    "email": "clararosadas@gmail.com"
+                    "datanascimento": "13/06/1989",
+                    "cargo": "dev",
+                    "estadocivil": "solteira",
+                    "genero": "feminino",
+                    "cep": "20510052",
+                    "endereco": "Rua Uruguai",
+                    "numero": "380",
+                    "complemento": "612",
+                    "bairro": "tijuca",
+                    "cidade": "Rio de Janeiro",
+                    "uf": "RJ",
+                    "celular": "(21)999999999",
+                    "alternativo": "(21)22222222",
+                    "email": "clararosadas@gmail.com",
+                    "id": "235443793",
+                    "cpf": "11431674737",
+                    "veiculo": "sim",
+                    "habilitacao": "sim"
                   }
                 }
               }

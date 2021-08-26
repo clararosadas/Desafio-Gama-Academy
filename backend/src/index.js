@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://desafioGama:zbJYElq2F8Z8RuZ5@cluster0.rzi0v.mong
 });
 
 app.use(express.json());
-app.use('./docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
 app.listen('5000', () => {
     console.log('Rodando na porta 5000');
