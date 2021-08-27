@@ -4,7 +4,7 @@ const routes = new express.Router();
 
 routes.post('/register', CandidateController.register);
 routes.get('/', (req, res) => {
-    res.send('Servidor rodando');
+    res.send('Formulário enviado');
 });
 
 module.exports = routes;
