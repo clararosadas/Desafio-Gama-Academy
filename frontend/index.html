@@ -1,192 +1,199 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>.:JobsNET Cadastro:.</title>
     </head>
 
     <body>  
-        <header>
-            <div id="imagem">
-                <img src="logo.png">
-            </div>    
+        <div class=flex>
+            <header>
+                <div id="imagem">
+                    <img src="logo.png">
+                </div>    
+                <div>
+                    <h1>JobsNET - Cadastro de Currículos</h1>
+                </div> 
+
+                <div>
+                    <a href="mailto:rh@jobsnet.com.br">Dúvidas?</a>
+                </div>
+            </header>
+
             <div>
-                <h1>JobsNET - Cadastro de Currículos</h1>
-            </div> 
-
-            <div>
-                <a href="mailto:rh@jobsnet.com.br">Dúvidas?</a>
+                <p id="titulo">Complete os campos abaixo com suas informações para fazer parte de nosso Banco de Talentos.</p>
             </div>
-        </header>
-
-        <form>
-            <div>
-                <p id="titulo">Complete os campos abaixo com suas informações para fazer parte de nosso Banco de Talentos</p>
-            </div>
-
-            <fieldset> 
-            <div class="grupo">
-                Dados pessoais
-            </div>
-
-            <div class="linha">
-                <div>
-                    <label for="nome">Nome Completo</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-
-                <div>
-                    <label for="datanascimento">Data de nascimento</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="date" name="datanascimento" id="datanascimento" size="8" maxlength="8" required> 
-                </div>
-            </div>
-
-            <div class="linha">
-                <div class="campo">
-                    <label for="cargo">Cargo Pretendido</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="cargo" id="cargo" required>
-                </div>
-
-                <div class="campo">
-                    <label for="estadocivil">Estado Civil</label>
-                    <select id="estadocivil">
-                      <option selected disabled value="">Selecione</option>
-                      <option>Solteiro(a)</option>
-                      <option>União Estável</option>
-                      <option>Casado(a)</option>
-                      <option>Separado(a)</option>
-                      <option>Divorciado(a)</option>
-                      <option>Viúvo(a)</option>
-                    </select>
-                </div>
-
-                <div class="campo">
-                    <label for="genero">Gênero</label>
-                    <select id="genero">
-                      <option selected disabled value="">Selecione</option>
-                      <option>Feminino</option>
-                      <option>Masculino</option>
-                      <option>Não-binário</option>
-                      <option>Outro</option>
-                      <option>Prefiro não declarar</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="linha">
-                <div>
-                    <label for="cep">CEP</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="cep" id="cep" size="8" maxlength="8" required>
-                </div>
-
-                <div>
-                    <label for="endereco">Endereço</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="endereco" id="endereco" required>
-                </div>
-
-                <div>
-                    <label for="numero">Número</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="numero" id="numero" required>
-                </div>
-            </div>
-
-            <div class="linha">
-                <div>
-                    <label for="complemento">Complemento</label><br>
-                    <input type="text" name="complemento" id="complemento">
-                </div>
-
-                <div>
-                    <label for="bairro">Bairro</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="bairro" id="bairro" required>
-                </div>
-
-                <div>
-                    <label for="cidade">Cidade</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="cidade" id="cidade" required>
-                </div>
-
-                <div>
-                    <label for="uf">UF</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="text" name="uf" id="uf" required>                     
-                </div>
-            </div>
-
-            <div class="linha">
-                <div>
-                    <label for="celular">Celular</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="celular" name="celular" id="celular" required>
-                </div>
-
-                <div>
-                    <label for="alternativo">Telefone alternativo</label><br>
-                    <input type="alternativo" name="alternativo" id="alternativo">
-                </div>
-
-                <div>
-                    <label for="email">E-mail</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="email" name="email" id="email" required>
-                </div>
-            </div>
-            </fieldset> 
-
-            <fieldset> 
-            <div class="grupo">
-                Documentos
-            </div>
-            <div class="linha">
-                <div>
-                    <label for="id">RG</label><br>
-                    <input type="id" name="id" id="id">
-                </div>
-
-                <div">
-                    <label for="cpf">CPF</label>
-                    <label id="obrigatorio">*</label><br>
-                    <input type="cpf" name="cpf" id="cpf" required>
-                </div>
-
-                <div>
-                    <label for="veiculo">Possui veículo?</label><br>
-                    <select id="veiculo">
-                      <option selected disabled value="">Selecione</option>
-                      <option>Sim</option>
-                      <option>Não</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label for="habilitacao">Habilitação</label><br>
-                    <select id="habilitacao">
-                      <option selected disabled value="">Selecione</option>
-                      <option>CNH A</option>
-                      <option>CNH B</option>
-                      <option>CNH C</option>
-                      <option>CNH D</option>
-                      <option>CNH E</option>
-                    </select>
-                </div>  
-            </div>
-            </fieldset>
             
-            <div class="button">
-                <button id="button" type="submit" onsubmit="">Enviar.</button>
-                <label id="obrigatorio">*</label>
-                <p id="pobrigatorio">Preenchimento obrigatório</p>
-            </div>            
+            <form action="/register" id="formulario">
+                <fieldset> 
+                <div class="grupo">
+                    Dados pessoais
+                </div>
 
-        </form>
+                <div class="linha">
+                    <div >
+                        <label for="nome">Nome Completo</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div>
+                        <label for="datanascimento">Data de nascimento</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="date" name="datanascimento" id="datanascimento" required> 
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div>
+                        <label for="cargo">Cargo Pretendido</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="cargo" id="cargo" required>
+                    </div>
+
+                    <div>
+                        <label for="estadocivil">Estado Civil</label><br>
+                        <select id="estadocivil">
+                            <option selected disabled value=""></option>
+                            <option>Solteiro(a)</option>
+                            <option>União Estável</option>
+                            <option>Casado(a)</option>
+                            <option>Separado(a)</option>
+                            <option>Divorciado(a)</option>
+                            <option>Viúvo(a)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="genero">Gênero</label><br>
+                        <select id="genero">
+                            <option selected disabled value=""></option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Não-binário</option>
+                            <option>Outro</option>
+                            <option>Prefiro não declarar</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div>
+                        <label for="cep">CEP</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="cep" id="cep" size="8" maxlength="8" required>
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="endereco" id="endereco" required>
+                    </div>
+
+                    <div>
+                        <label for="numero">Número</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="numero" id="numero" required>
+                    </div>
+
+                    <div>
+                        <label for="complemento">Complemento</label><br>
+                        <input type="text" name="complemento" id="complemento">
+                    </div>
+
+                </div>
+
+                <div class="linha">
+                    <div>
+                        <label for="bairro">Bairro</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="bairro" id="bairro" required>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="cidade" id="cidade" required>
+                    </div>
+
+                    <div>
+                        <label for="uf">UF</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="text" name="uf" id="uf" required>                     
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div>
+                        <label for="celular">Celular</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="celular" name="celular" id="celular" required>
+                    </div>
+
+                    <div>
+                        <label for="alternativo">Telefone alternativo</label><br>
+                        <input type="alternativo" name="alternativo" id="alternativo">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                </fieldset> 
+
+                <fieldset> 
+                <div class="grupo">
+                    Documentos
+                </div>
+                <div class="linha">
+                    <div>
+                        <label for="id">RG</label><br>
+                        <input type="id" name="id" id="id">
+                    </div>
+
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <label id="obrigatorio">*</label><br>
+                        <input type="cpf" name="cpf" id="cpf" required>
+                    </div>
+
+                    <div>
+                        <label for="veiculo">Possui veículo?</label><br>
+                        <select id="veiculo">
+                            <option selected disabled value=""></option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="habilitacao">Habilitação</label><br>
+                            <select id="habilitacao">
+                                <option selected disabled value=""></option>
+                                <option>CNH A</option>
+                                <option>CNH B</option>
+                                <option>CNH C</option>
+                                <option>CNH D</option>
+                                <option>CNH E</option>
+                            </select>
+                        </div>  
+                    </div>
+                    </fieldset>
+            
+                    <div class="button">
+                        <button id="submit-btn" type="submit" onsubmit="">Enviar.</button>
+                        <label id="obrigatorio">*</label>
+                        <p id="pobrigatorio">Preenchimento obrigatório</p>
+                    </div>            
+
+            </form> 
+        </div>
 
     </body>
 

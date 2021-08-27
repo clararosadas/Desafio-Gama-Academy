@@ -5,50 +5,38 @@
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#titulo {
-    font-family: sans-serif;
-    color: #8ccdb0;
-} 
-
-fieldset {
-    border: 10;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
 body{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     color: #8ccdb0;
-    justify-content: center;
 }
 
-input, select, button {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1em;
-    border-radius: 5px;
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 header {
     display: flex; 
-    justify-content: space-around;
-    width: 99%;
-    padding: 7px; 
-    margin-bottom: 10px;    
-    margin-top: 0px;
-    margin-left: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+    color: #8ccdb0;
+}
+
+.imagem {
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
 }
 
 h1 {
     color: #8ccdb0;
     font-size: 170%;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-p {
-    color: #8ccdb0;
-    font-size: 140%;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -63,53 +51,107 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: 80%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 1px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #8ccdb0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 140%;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+fieldset {
+    width: 50%;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    border: 10;
+    padding: 5px;
+    margin: 10 auto;
+    margin-block-end: 15px;
+    border-radius: 5px;
+}
+
+.grupo {
+    font-size: 18px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
 }
 
 .linha {
-    width: 45%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
     margin-right: 1em;
     padding: 1px;
-    }
+}
 
-.imagem {
-    max-width:100px;
-    max-height:100px;
-    width: auto;
-    height: auto;
+input, select, button {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+input, select {
+    width: 100%;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nome {
+    width: 25rem;
+}
+
+#cep, #celular, #alternativo, #id, #cpf, #complemento, #estadocivil {
+    width: 7.5rem;    
+}
+
+#cargo, #endereco, #email {
+width: 18.75rem;
+}
+
+#veiculo, #habilitacao {
+    width: 5.625rem;
+}
+
+#numero {
+    width: 3rem;
+}
+
+button, select {
+    cursor: pointer;
 }
 
 .button{
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
-#button {
+#submit-btn {
     padding: 5px 15px;
     font-size: 15px;
-    cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
     color: #8ccdb0;
     background-color: #919191;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
 }
-
-#button, select, input{
-    cursor: pointer;
-}
-  
-#button:hover {
+ 
+#submit-btn:hover {
     background-color:#8ccdb0;
     color: #919191;
     transition: 300ms;
@@ -125,4 +167,10 @@ form {
     color: black;
     font-size: 12px;
     margin-top: 10px;
+}
+
+p {
+    color: #8ccdb0;
+    font-size: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }

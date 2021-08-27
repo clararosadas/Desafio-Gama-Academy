@@ -1,3 +1,5 @@
+//Pesquisa CEP
+
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
@@ -38,7 +40,7 @@ const preencherFormulario = (endereco) => {
     document.getElementById('uf').value = endereco.uf;
 }
 
-
+// Validação CPF
 
 function validaCPF(cpf) {
     if (cpf.length != 11) {
@@ -88,4 +90,30 @@ function validacao() {
         document.getElementById('erroBlocoCPF').style.border = 'none';
         return true;
     }
+}
+
+//Fetch
+
+async function getContent() {
+    try {
+    const response = await fetch('http://localhost:5000/')
+    const data = await response.json()
+
+    show(data)
+
+    } catch (error) {
+        console.error(error)
+    }
+}
+getContent()
+
+function show(users) {
+
+    let output = ''
+
+    for( let user of users) {
+        output += `<li>${user.name}</li>`
+    }
+
+    document.querySelector('main').innerHTML = output
 }
