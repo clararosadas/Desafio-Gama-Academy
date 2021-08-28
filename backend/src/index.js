@@ -6,10 +6,7 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://desafioGama:zbJYElq2F8Z8RuZ5@cluster0.rzi0v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true 
-});
+mongoose.connect('mongodb+srv://desafioGama:1sI4rxBGORzTgioS@cluster0.rzi0v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 app.use(cors());
 app.use(express.json());
