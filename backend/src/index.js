@@ -7,8 +7,8 @@ const app = express();
 const cors = require('cors');
 
 mongoose.connect('mongodb+srv://desafioGama:zbJYElq2F8Z8RuZ5@cluster0.rzi0v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-  //  useNewUrlParser:true,
-   // useCreateIndex: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true 
 });
 
 app.use(cors());
