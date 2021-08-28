@@ -40,7 +40,7 @@
                     "type": "string"
                   },
                   "cep": {
-                    "type": "string"
+                    "type": "number"
                   },
                   "endereco": {
                     "type": "string"
@@ -61,10 +61,10 @@
                     "type": "string"
                   },
                   "celular": {
-                    "type": "string"
+                    "type": "number"
                   },
                   "alternativo": {
-                    "type": "string"
+                    "type": "number"
                   },
                   "email": {
                     "type": "string"
@@ -73,7 +73,7 @@
                     "type": "string"
                   },
                   "cpf": {
-                    "type": "string"
+                    "type": "number"
                   },
                   "veiculo": {
                     "type": "string"

@@ -3,7 +3,9 @@ const Candidate = require('../models/Candidate');
 module.exports = {
     async register(req, res) {
         
-        const { nome, datanascimento, cargo, estadocivil, genero, cep, endereco, numero, complemento, bairro, cidade, uf, celular, alternativo, email, id, cpf, veiculo, habilitacao } = req.body;
+        const { nome, datanascimento, cargo, estadocivil, genero, cep, endereco, numero, 
+            complemento, bairro, cidade, uf, celular, alternativo, email, id, 
+            cpf, veiculo, habilitacao } = req.body;
 
         const newCandidate = new Candidate();
 
@@ -30,10 +32,10 @@ module.exports = {
         newCandidate.save((err, savedCandidate) => {
             if (err) {
                 console.log(err);
-                return res.status(500).send();
-            }
-
-            return res.status(200).send(savedCandidate);
+                return res.status(500).send('ERRO');
+            } else {
+                return res.status(200).send(savedCandidate);
+            }    
         });
     },
 }
