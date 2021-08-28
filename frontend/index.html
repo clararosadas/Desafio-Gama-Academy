@@ -28,7 +28,7 @@
                 <p id="titulo">Complete os campos abaixo com suas informações para fazer parte de nosso Banco de Talentos.</p>
             </div>
             
-            <form action="/register" id="formulario">
+            <form name="form" id="formulario" onchange="formulario()">
                 <fieldset> 
                 <div class="grupo">
                     Dados pessoais
@@ -85,7 +85,7 @@
                     <div>
                         <label for="cep">CEP</label>
                         <label id="obrigatorio">*</label><br>
-                        <input type="text" name="cep" id="cep" size="8" maxlength="8" required>
+                        <input type="text" name="cep" id="cep" placeholder="apenas números" size="8" maxlength="8" required>
                     </div>
 
                     <div>
@@ -160,7 +160,7 @@
                     <div>
                         <label for="cpf">CPF</label>
                         <label id="obrigatorio">*</label><br>
-                        <input type="cpf" name="cpf" id="cpf" required>
+                        <input type="cpf" name="cpf" placeholder="apenas números" id="cpf" required>
                     </div>
 
                     <div>
@@ -187,7 +187,7 @@
                     </fieldset>
             
                     <div class="button">
-                        <button id="submit-btn" type="submit" onsubmit="">Enviar.</button>
+                        <button id="submit-btn" type="submit" onclick="criar()">Enviar.</button>
                         <label id="obrigatorio">*</label>
                         <p id="pobrigatorio">Preenchimento obrigatório</p>
                     </div>            
