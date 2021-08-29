@@ -37,12 +37,8 @@ function validacaoCPF() {
     let resultadoValidacao = validaCPF(cpf);
     
     if (!resultadoValidacao) {
-        document.getElementById('erroCPF').style.display = 'block';
-        document.getElementById('erroBlocoCPF').style.border = '.1875rem solid red';
         return false;
     } else {
-        document.getElementById('erroCPF').style.display = 'none';
-        document.getElementById('erroBlocoCPF').style.border = 'none';
         return true;
     }
 }
