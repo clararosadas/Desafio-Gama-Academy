@@ -18,3 +18,5 @@ Todo candidato precisará preencher os campos: CPF, Nome, Data Nascimento, Cep, 
 Integração entre a Página de Formulário e o Back-end
 Disponibilizar uma API Rest com a funcionalidade de cadastro de candidatos armazenando em um banco de dados.
 Disponibilizar a documentação dos recursos Web Services REST - Uso do Swagger.
+
+CEP e CPF tem que ser digitados somente como números - ainda não há tratamento para quando digitam com hífen, pontuações e outros caracteres.
