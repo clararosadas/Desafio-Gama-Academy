@@ -134,6 +134,25 @@ const criar = async (candidato) => {
 }  
 
 function check() {
-    alert('verificando dados');
-    criar();
-}
+        let nome = document.getElementById('nome').value;
+        let cargo = document.getElementById('cargo').value;
+        let datanascimento = document.getElementById('datanascimento').value;
+        let cep = document.getElementById('cep').value;
+        let endereco = document.getElementById('endereco').value;
+        let numero = document.getElementById('numero').value;
+        let bairro = document.getElementById('bairro').value;
+        let cidade = document.getElementById('cidade').value;
+        let uf = document.getElementById('uf').value;
+        let celular = document.getElementById('celular').value;
+        let email = document.getElementById('email').value.mata;
+        let id = document.getElementById('id').value;
+    
+        if (nome == "" || cargo == "" || datanascimento == "" || cep == "" || endereco == ""
+            || numero == "" || bairro == "" || cidade == "" || uf == "" || celular == "" ||
+            email == false || id == "" || validacaoCPF() == false) {
+            alert('Por favor, preencha todos os campos corretamente.');
+        } else {
+            criar();
+            alert('verificando cadastro...');
+        }
+    }
