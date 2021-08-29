@@ -117,7 +117,7 @@ const formulario = () => {
 
 const criar = async (candidato) => {
     try {
-        const usuario = fetch('http://localhost:5000/register', {
+        const usuario = fetch('https://jobsnetback.herokuapp.com/register', {
             method: "POST",
             headers: {
                 'Accept': 'application/json',

@@ -6,7 +6,7 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://desafioGama:1sI4rxBGORzTgioS@cluster0.rzi0v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.rzi0v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 
 app.use(cors());
 app.use(express.json());
