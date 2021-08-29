@@ -131,17 +131,4 @@ const criar = async (candidato) => {
     } catch (error) {
         alert('Não foi')
     }
-}
-
-function check() {
-
-    var valid = true;
-    if (!validacaoCPF() || !pesquisarCep()) { valid = false; }
-
-    if (!valid) {
-        alert('Por favor, preencha todos os campos corretamente.');
-        return false;
-    } else {
-        return true;
-    }
-}    
+}  
