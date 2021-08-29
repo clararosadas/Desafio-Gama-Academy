@@ -132,3 +132,8 @@ const criar = async (candidato) => {
         alert('Não foi')
     }
 }  
+
+function check() {
+    alert('verificando dados');
+    criar();
+}
